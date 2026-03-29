@@ -1,0 +1,220 @@
+@import url("./extras.css");
+
+* {
+    font-weight: 600;
+}
+
+.crash {
+    --var-backgroundBlack-body: #1A0F0A; 
+    --var-backgroundBlack-inputzada: #2D1B33;
+    --var-backgroundBlack-resultado-todosandares: #26140F;
+    --var-backgroundBlack-botaoindividual: #E65100;
+    --var-backgroundBlack-botaoindividual-hover: #FF6D00;
+    --var-background-operacoes: #2962FF; 
+    --var-botaoindividual-color: #F5F5F5;
+    --var-branco: #FFFFFF;
+    --var-igual: #00C853; 
+    --var-aparecerhistorico: #AA00FF;
+    --var-linhapreta: #1B5E20; 
+    --var-boxshadow-comousar: rgba(26, 15, 10, 0.95);
+    --var-strong-comousar: #FFD600;
+}
+
+.aku {
+    --var-backgroundBlack-body: #3E2723; 
+    --var-backgroundBlack-inputzada: #2D1B18;
+    --var-backgroundBlack-resultado-todosandares: #1B110F;
+    --var-backgroundBlack-botaoindividual: #5D4037;
+    --var-backgroundBlack-botaoindividual-hover: #6D4C41;
+    --var-background-operacoes: #4CAF50; 
+    --var-botaoindividual-color: #FFF3E0;
+    --var-branco: #FFFFFF;
+    --var-igual: #00E5FF; 
+    --var-aparecerhistorico: #00B8D4;
+    --var-linhapreta: #D32F2F; 
+    --var-boxshadow-comousar: rgba(62, 39, 35, 0.8);
+    --var-strong-comousar: #FFEB3B;
+}
+
+.neo {
+    --var-backgroundBlack-body: #0A0812; 
+    --var-backgroundBlack-inputzada: #1A1626;
+    --var-backgroundBlack-resultado-todosandares: #120F1C;
+    --var-backgroundBlack-botaoindividual: #252033;
+    --var-backgroundBlack-botaoindividual-hover: #342D47;
+    --var-background-operacoes: #F9D71C; 
+    --var-botaoindividual-color: #D1CFE2;
+    --var-branco: #FFFFFF;
+    --var-igual: #39FF14; 
+    --var-aparecerhistorico: #2DBF10;
+    --var-linhapreta: #1E3A8A; 
+    --var-boxshadow-comousar: rgba(10, 8, 18, 0.9);
+    --var-strong-comousar: #A855F7;
+}
+
+.ratcicle {
+    --var-backgroundBlack-body: #101726; 
+    --var-backgroundBlack-inputzada: #1B263B;
+    --var-backgroundBlack-resultado-todosandares: #0D1B2A;
+    --var-backgroundBlack-botaoindividual: #415A77;
+    --var-backgroundBlack-botaoindividual-hover: #778DA9;
+    --var-background-operacoes: #78D2E6; 
+    --var-botaoindividual-color: #E0E1DD;
+    --var-branco: #FFFFFF;
+    --var-igual: #A2D2FF; 
+    --var-aparecerhistorico: #48CAE4;
+    --var-linhapreta: #1B263B; 
+    --var-boxshadow-comousar: rgba(16, 23, 38, 0.95);
+    --var-strong-comousar: #CAF0F8;
+}
+
+
+body {
+    background-color: var(--var-backgroundBlack-body);
+    position: relative;
+}
+
+.six__seven {
+    position: fixed;
+    /* garante que fique sobre toda a tela */
+    top: 50%;
+    /* centraliza verticalmente */
+    left: 50%;
+    /* centraliza horizontalmente */
+    transform: translate(-50%, -50%);
+    /* centraliza o GIF no meio */
+    z-index: 9999;
+    /* muito acima de tudo */
+    pointer-events: none;
+    /* não atrapalha cliques */
+    display: none;
+    /* escondido por padrão */
+    width: 50em;
+
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.andares {
+    position: relative;
+}
+
+.inputzada {
+    width: 75%;
+    font-size: 1em;
+    color: var(--var-branco);
+    padding: 2em;
+    background-color: var(--var-backgroundBlack-inputzada);
+    border: none;
+    text-align: right;
+}
+
+.display__calculadora {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: 95vh;
+    margin-left: 2em;
+}
+
+.resultado {
+    background-color: var(--var-backgroundBlack-resultado-todosandares);
+    padding: 5vh;
+    border-radius: 5em;
+    margin-bottom: 1em;
+}
+
+.todos__andares {
+    background-color: var(--var-backgroundBlack-resultado-todosandares);
+    border-radius: 5em;
+    padding: 4vh;
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0.5em 0 0.5em;
+}
+
+.andar__individual {
+    display: flex;
+    gap: 0.5;
+    margin: 0em;
+}
+
+.botao__individual {
+    background-color: var(--var-backgroundBlack-botaoindividual);
+    color: var(--var-botaoindividual-color);
+    border-radius: 3em;
+    padding: 1.5em;
+    font-size: 1.5em;
+    flex: 1;
+    margin: 0.3em;
+    border: none;
+    cursor: pointer;
+    /* Adiciona o cursor de clique */
+}
+
+.botao__individual:active {
+    transform: scale(0.92);
+    /**/
+    background-color: var(--var-backgroundBlack-botaoindividual-hover);
+}
+
+.operacoes {
+    background-color: var(--var-background-operacoes);
+    color: var(--branco);
+}
+
+.igual {
+    background-color: var(--var-igual);
+    color: var(--branco);
+}
+
+
+.historico__calculadora {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.temas {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.funcoes{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.botao_aparecer_historico {
+    box-shadow: 2px 3px 2px var(--var-aparecerhistorico);
+    border-radius: 10em;
+    background-color: var(--var-aparecerhistorico);
+
+    transition: 1s;
+}
+
+.amarelo { 
+    background-color: #ffdc41 !important;
+ }
+.rosa { 
+    background-color: #ff3153 !important;
+}
+.roxo {
+     background-color: #7a56fc !important;
+    }
+
+.botao_aparecer_historico:hover {
+    box-shadow: 2px 3px 2px var(--var-branco);
+    background-color: var(--var-branco);
+}
+
+@media screen and (max-width: 1300px) {
+    .botao__individual {
+        padding: 1.2em;
+    }
+}
+
+
